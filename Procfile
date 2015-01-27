@@ -1,1 +1,1 @@
-web: python src/scheduler/app.py
+web: python src/librekpi/app.py

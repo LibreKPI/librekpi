@@ -1,0 +1,17 @@
+<md-content layout="column" layout-align="center center" style="padding: 20px;" class="settings-form" >
+
+    <md-radio-group ng-model="user.university" style="width:100%;border:none">
+        <md-radio-button value="kpi">NTUU KPI</md-radio-button>
+        <md-radio-button value="other">Other</md-radio-button>
+    </md-radio-group>
+    <md-text-float label="Group name" class="longer"
+                   ng-model="user.group" disabled></md-text-float>
+    <md-text-float label="Class duration" class="longer"
+                   ng-model="user.classDuration" disabled></md-text-float>
+    <div layout="row" style="width: 100%" flex>
+        <md-button class="md-raised md-primary save-btn" ng-click="saveSettings()" flex>Save</md-button>&nbsp;&nbsp;&nbsp;
+        <md-button class="md-raised md-primary save-btn"
+                   href="/login/google"
+                   ng-show="user.university === 'kpi'" flex>Import to Google Calendar</md-button>
+    </div>
+</md-content>
