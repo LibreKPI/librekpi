@@ -5,12 +5,13 @@ A web-service exposing freely available information about university majors, cou
 
 ## dev
 ### Prerequisites
-Ensure that you have `mongodb` service running. Also you may want to modify config/dev/app.py and/or environment variables to make some initial configuration (prior to issuing the last command). Default port is 8888.
+Ensure that you have `mongodb` service running and node, bower installed. Also you may want to modify config/dev/app.py and/or environment variables to make some initial configuration (prior to issuing the last command). Default port is 8888.
 ### Execution
 ```bash
 $ git clone git@github.com:LibreKPI/librekpi.git
 $ cd librekpi
 $ virtualenv -p python3.4 .env
+$ npm install
 $ . .env/bin/activate
 (.env)$ pip install -r requirements.txt
 (.env)$ python src/librekpi/app.py
